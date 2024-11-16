@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(330, 100%, 98%);
+    font-size: 25px;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.first_part{
+  display: flex;
+  flex-wrap: wrap;
+  border-radius:10px ;
+  padding: 0  3vh;
+  margin: 0  30vw;
+  margin-top: 2vw;
+  width: 40%;
+   background-color: white;
+}
+.first_part  img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  margin: 1vw 0vw;
+  border-radius: 5px;
+}
+.first_part h1{
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.first_part  p{
+  font-size: 0.5em;
+  font-weight: 400;
+}
+
+.second_part{
+  height: calc(100% - 200px);
+  width: 100%;
+  border-radius:10px ;
+  padding: 1vw 1vw;
+  margin-top: 1vw;
+  background-color: hsl(330, 100%, 98%);
+}
+.second_part  h1{
+  color:  hsl(332, 51%, 32%);
+  font-size: 0.8em;
+  font-weight: 400;
+}
+.second_part ul li {
+  font-size: 0.7em;
+  margin: 0 2vw;
+  font-weight: 200;
+}
+
+.third-part{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  border-bottom:  2px solid #dadada;
+}
+.third-part h1{
+ font-size: 1.2em;
+ font-weight: 400;
+ color: hsl(14, 45%, 36%);
+}
+
+.third-part ul li{
+  font-size: 0.7em;
+  margin: 0 2vw;
+  margin-top: 0.7vw;
+  font-weight: 200;
+  padding: 0px;
+}
+
+.fourh-part{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1vw;
+  border-bottom:  2px solid #dadada;
+}
+.fourh-part h1{
+  font-size: 1.2em;
+  font-weight: 400;
+ color: hsl(14, 45%, 36%);
+}
+.fourh-part ol li{
+  font-size: 0.7em;
+  margin: 0 2vw;
+  margin-top: 0.7vw;
+  font-weight: 200;
+  padding: 0px;
+}
+
+.fifth-part{
+  margin-bottom: 1vw;
+}
+.fifth-part h1{
+  font-size: 1.2em;
+  font-weight: 400;
+ color: hsl(14, 45%, 36%);
+}
+.fifth-part p{
+  font-size: 0.6em;
+  font-weight: 400;
+}
+.fifth-part h4{
+  display: flex;
+  padding-top: 1vw;
+  justify-content: flex-start;
+  font-size: 0.7em;
+  font-weight: 400;
+  align-items: center;
+}
+.first_part h5{
+  display: flex;
+  justify-content: flex-end;
+  color: hsl(14, 45%, 36%);
+  font-size: 0.7em;
+  margin-bottom: 1vw;
+}
+
+.challenge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+
+}
+
+@media (max-width:600px) {
+  html,body{
+  background-color: white;
+  }
+  
+  .main{
+    margin-left: -120px;
+  }
+  .first_part{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+  }
+  .first_part img{
+    width: 100%;
+    height: 42vw;
+    object-fit:  cover;
+  }
+  .first_part h1{
+    font-size: 1em;
+    font-weight: 700;
+  }
+  .first_part p{
+    font-size: 0.5em;
+    font-weight: 300;
+  }
+  .second_part{
+    background-color:hsl(330, 100%, 98%);
+    max-width: 100%;
+    margin: 0vw 1vw;
+  }
+  .second_part h1{
+    color: hsl(332, 51%, 32%);
+    font-size: 0.9em
+  }
+  .second_part ul li{
+    font-size: 0.5em;
+  margin: 0 4vw;
+  font-weight: 300;
+  }
+
+  .third-part h1{
+    font-size: 0.9em;
+  }
+  .third-part ul li{
+    font-size: 0.5em;
+    margin: 0 4vw;
+    font-weight: 300;
+  }
+  .fourh-part h1{
+    font-size: 0.9em;
+  }
+  .fourh-part ol li{
+    font-size: 0.5em;
+    margin: 0 4vw;
+    font-weight: 300;
+  }
+  .fifth-part h1{
+    font-size: 0.9em;
+  }
+  .fifth-part p{
+    font-size: 0.5em;
+  }
+  .fifth-part h4{
+    font-size: 0.5em;
+  }
+  .fifth-part h5{
+      font-size: 0.5em;
+  }
+  .challenge{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    font-size: 0.5em;
+    left: 30%;
+    align-items: center;
+  }
+}
+  </style>
+</head>
+<body>
+<div class="main">
+<div class="first_part">
+    <img src="/assets/images/image-omelette.jpeg" alt="">  
+   <h1>Simple Omelette Recipe</h1>
+
+  <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+  to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+
+  <div class="second_part"> 
+    <h1>Preparation time</h1>
+    <ul>
+    <li><b>Total</b>: Approximately 10 minutes</li>
+    <li><b>Preparation</b>: 5 minutes</li>
+    <li><b>Cooking</b>: 5 minutes</l1>
+    </ul>
+    </div>
+
+    <div class="third-part">
+      <h1>Ingredients</h1>
+      <ul>
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        <br>
+      </ul>
+      </div>
+      
+      <div class="fourh-part">
+        <h1>Instructions</h1>
+        <ol>
+        <li><b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+        You can add a tablespoon of water or milk for a fluffier texture.</li>
+        
+        <li><b>Heat the pan</b>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        
+       <li><b>Cook the omelette</b>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+        the eggs evenly coat the surface.</li>
+        
+        <li><b>Add fillings (optional)</b>: When the eggs begin to set at the edges but are still slightly runny in the 
+        middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        
+        <li><b>Fold and serve</b>: As the omelette continues to cook, carefully lift one edge and fold it over the 
+        fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        
+        <li><b>Enjoy</b>: Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+      <br>
+      </div>
+      
+      <div class="fifth-part">
+       <h1> Nutrition </h1>
+        
+       <p> The table below shows nutritional values per serving without the additional fillings.</p>
+        
+        <h4>Calories</h4>
+        <h5>277kcal</h5>
+        <hr />
+        <h4>Carbs</h4>
+        <h5>0g</h5>
+        <hr />
+        <h4>Protein</h4>
+        <h5>20g</h5>
+        <hr />
+        <h4>Fat</h4>
+        <h5>22g</h5>
+      </div>
+</div>
+<div class="challenge">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Manish kumar</a>.
+</div>
+</div>
+</body>
+</html>
